@@ -2,9 +2,9 @@ import taichi as ti
 import taichi_helper as th
 
 ti.init(arch=ti.gpu)
-
+# 画布大小
 n = 512
-
+# 画布的像素矩阵
 pixels = ti.Vector.field(3, ti.f32, shape=(n, n))
 
 @ti.kernel
