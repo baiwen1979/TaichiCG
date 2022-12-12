@@ -1,8 +1,8 @@
 import taichi as ti
 
 @ti.func
-def clamp(v, lower, upper):
-    return ti.max(lower, ti.min(upper, v))
+def clamp(v, v_min, v_max):
+    return ti.max(v_min, ti.min(v_max, v))
 
 @ti.func
 def step(edge, v):
